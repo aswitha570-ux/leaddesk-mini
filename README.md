@@ -3,8 +3,8 @@
 A small full-stack lead-capture product: a public landing page with a lead form, and a
 password-protected admin dashboard to review and manage submissions.
 
-**Live URL:** _add your deployed Render URL here_
-**GitHub repo:** _add your repo URL here_
+**Live URL:**  https://leaddesk-mini-ft4e.onrender.com
+**GitHub repo:** https://github.com/aswitha570-ux/leaddesk-mini
 
 ---
 
