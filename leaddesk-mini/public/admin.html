@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>LeadDesk Mini — Admin</title>
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <header class="hero small">
+    <nav class="navbar">
+      <div class="logo">LeadDesk<span>Mini</span></div>
+      <a href="/" class="admin-link">← Back to site</a>
+    </nav>
+  </header>
+
+  <main class="container">
+
+    <!-- LOGIN VIEW -->
+    <section class="form-card" id="loginView">
+      <h2>Admin Login</h2>
+      <form id="loginForm" novalidate>
+        <div class="field">
+          <label for="username">Username</label>
+          <input type="text" id="username" name="username" required />
+        </div>
+        <div class="field">
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password" required />
+        </div>
+        <button type="submit">Log In</button>
+        <p id="loginStatus" class="form-status"></p>
+      </form>
+    </section>
+
+    <!-- DASHBOARD VIEW -->
+    <section class="dashboard" id="dashboardView" hidden>
+      <div class="dash-header">
+        <h2>Leads</h2>
+        <button id="logoutBtn" class="secondary">Log Out</button>
+      </div>
+
+      <div class="controls">
+        <input type="text" id="searchInput" placeholder="Search name, email, or message..." />
+        <select id="statusFilter">
+          <option value="">All statuses</option>
+          <option value="New">New</option>
+          <option value="Contacted">Contacted</option>
+          <option value="Closed">Closed</option>
+        </select>
+      </div>
+
+      <table class="leads-table">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Budget</th>
+            <th>Message</th>
+            <th>Submitted</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody id="leadsBody">
+        </tbody>
+      </table>
+      <p id="emptyState" class="form-status" hidden>No leads found.</p>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <p>Built for Digital Heroes Training Task — <a href="https://digitalheroesco.com" target="_blank" rel="noopener">digitalheroesco.com</a></p>
+  </footer>
+
+  <script src="admin.js"></script>
+</body>
+</html>

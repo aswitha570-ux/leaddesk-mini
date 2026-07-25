@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>LeadDesk Mini</title>
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <header class="hero">
+    <nav class="navbar">
+      <div class="logo">LeadDesk<span>Mini</span></div>
+      <a href="/admin" class="admin-link">Admin Login</a>
+    </nav>
+    <div class="hero-content">
+      <h1>Get More Qualified Leads, Faster</h1>
+      <p>Tell us a bit about your project and budget — our team will reach out within 24 hours.</p>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="form-card">
+      <h2>Request a Callback</h2>
+      <form id="leadForm" novalidate>
+        <div class="field">
+          <label for="name">Full Name *</label>
+          <input type="text" id="name" name="name" required />
+          <span class="error" id="err-name"></span>
+        </div>
+
+        <div class="field">
+          <label for="email">Email Address *</label>
+          <input type="email" id="email" name="email" required />
+          <span class="error" id="err-email"></span>
+        </div>
+
+        <div class="field">
+          <label for="budget">Budget Range *</label>
+          <select id="budget" name="budget" required>
+            <option value="">Select a range</option>
+            <option value="Under $1,000">Under $1,000</option>
+            <option value="$1,000 - $5,000">$1,000 - $5,000</option>
+            <option value="$5,000 - $15,000">$5,000 - $15,000</option>
+            <option value="$15,000+">$15,000+</option>
+          </select>
+          <span class="error" id="err-budget"></span>
+        </div>
+
+        <div class="field">
+          <label for="message">Tell us about your project *</label>
+          <textarea id="message" name="message" rows="4" required></textarea>
+          <span class="error" id="err-message"></span>
+        </div>
+
+        <button type="submit" id="submitBtn">Submit Request</button>
+        <p id="formStatus" class="form-status"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>Built for Digital Heroes Training Task — <a href="https://digitalheroesco.com" target="_blank" rel="noopener">digitalheroesco.com</a></p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
