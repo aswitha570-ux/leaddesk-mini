@@ -29,7 +29,7 @@ password-protected admin dashboard to review and manage submissions.
 | status     | TEXT    | `New` (default) / `Contacted` / `Closed`    |
 | created_at | TEXT    | Set automatically on insert                 |
 
-**`admins` table**
+**`admins` table** 
 
 | Column        | Type    | Notes                                  |
 |---------------|---------|------------------------------------------|
